@@ -38,7 +38,7 @@ cp -r top-journal-writing-mentor ~/.claude/skills/
 Or clone directly:
 
 ```bash
-git clone https://github.com/Jill0099/top-journal-writing-mentor ~/.claude/skills/top-journal-writing-mentor
+git clone https://github.com/YueyangWang/Finance-top-journal-writing-mentor ~/.claude/skills/top-journal-writing-mentor
 ```
 
 ---
@@ -48,9 +48,14 @@ git clone https://github.com/Jill0099/top-journal-writing-mentor ~/.claude/skill
 ```
 top-journal-writing-mentor/
 ├── SKILL.md                          # Core skill (auto-loaded when triggered)
-└── references/
-    ├── section-patterns.md           # Abstract/Intro/Hypothesis/Results patterns
-    └── empirical-design-patterns.md  # 10 identification strategy templates
+├── references/
+│   ├── section-patterns.md           # Abstract/Intro/Hypothesis/Results patterns
+│   └── empirical-design-patterns.md  # 10 identification strategy templates
+└── prompts/
+    ├── 01-analyze-manuscript.md      # Full manuscript analysis prompt
+    ├── 02-rewrite-introduction.md    # Introduction rewrite prompt (7-paragraph skeleton)
+    ├── 03-rewrite-abstract.md        # Abstract rewrite (JFQA 4-move / JCF 5-move)
+    └── 04-identification-language.md # Identification strategy language (DiD/IV/RDD/Oster/PSM)
 ```
 
 ---
@@ -103,6 +108,21 @@ Built from systematic reading of **50 papers** across:
 - **Review of Finance** — 9 papers
 
 Topics: political connections, ESG/sustainable finance, corporate governance, executive compensation, policy uncertainty, innovation.
+
+---
+
+## Prompts (Copy-Paste Ready)
+
+The `prompts/` folder contains 4 standalone prompts for use **without** Claude Code — paste directly into any Claude chat:
+
+| File | Use Case |
+|------|----------|
+| `01-analyze-manuscript.md` | Full manuscript review — section scores + rewrites |
+| `02-rewrite-introduction.md` | Rewrite intro following 7-paragraph skeleton |
+| `03-rewrite-abstract.md` | Rewrite abstract in JFQA (4-move) or JCF (5-move) style |
+| `04-identification-language.md` | Generate DiD / IV / RDD / Oster / PSM-DiD language |
+
+Each prompt is self-contained with fill-in fields (`[e.g., ...]`) — replace with your paper's details and paste.
 
 ---
 
