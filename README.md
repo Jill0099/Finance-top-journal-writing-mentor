@@ -38,7 +38,7 @@ cp -r top-journal-writing-mentor ~/.claude/skills/
 Or clone directly:
 
 ```bash
-git clone https://github.com/YueyangWang/Finance-top-journal-writing-mentor ~/.claude/skills/top-journal-writing-mentor
+git clone https://github.com/Jill0099/Finance-top-journal-writing-mentor ~/.claude/skills/top-journal-writing-mentor
 ```
 
 ---
