@@ -1,6 +1,6 @@
 ---
 name: top-journal-writing-mentor
-description: This skill should be used when the user asks to "根据顶刊论文分析我的manuscript", "analyze my manuscript against top journal style", "用顶刊风格改写", "分析顶刊写作风格", "improve my writing based on top finance journal papers", "对比顶刊写作", "按顶刊标准检查我的稿件", "rewrite my introduction in JFQA/JCF/JF style", or provides PDF papers for writing style analysis. Specialized for top finance journals: JFQA, JCF, Journal of Finance, Review of Finance.
+description: This skill should be used when the user asks to "analyze my manuscript against top journal style", "rewrite my introduction in JFQA style", "check my paper against top journal standards", "rewrite my abstract in JCF style", "improve my writing based on top finance journal papers", "help me write identification strategy language for DiD", or provides PDF papers for writing style analysis. Specialized for top finance journals: JFQA, JCF, Journal of Finance, Review of Finance.
 version: 1.0.0
 ---
 
@@ -12,7 +12,7 @@ Writing style mentor built from systematic analysis of 50 papers across JFQA, JC
 
 ## Core Workflow
 
-### "根据顶刊论文分析我的manuscript"
+### Analyze Manuscript Against Top Journal Style
 
 1. Ask the user to provide their manuscript (PDF or text)
 2. Identify target journal (JFQA / JCF / JF) — influences section structure and hypothesis format
@@ -205,6 +205,5 @@ Always preview the identification strategy in the introduction:
 
 ## Additional Resources
 
-- **`references/style-dimensions.md`** — Full detail on 6 style dimensions with annotated examples
 - **`references/section-patterns.md`** — Section-by-section structural patterns with real paper quotes
 - **`references/empirical-design-patterns.md`** — How to describe 10 identification strategies in prose (DiD, IV, RDD, PSM-DiD, Oster bound, etc.)
