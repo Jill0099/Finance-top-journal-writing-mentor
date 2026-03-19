@@ -1,7 +1,7 @@
 ---
 name: top-journal-writing-mentor
 description: This skill should be used when the user asks to "analyze my manuscript against top journal style", "rewrite my introduction in JFQA style", "check my paper against top journal standards", "rewrite my abstract in JCF style", "improve my writing based on top finance journal papers", "help me write identification strategy language for DiD", or provides PDF papers for writing style analysis. Specialized for top finance journals: JFQA, JCF, Journal of Finance, Review of Finance.
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Top Journal Writing Mentor (Finance)
@@ -34,14 +34,14 @@ Writing style mentor built from systematic analysis of 50 papers across JFQA, JC
 
 ## Journal Quick Reference
 
-| Feature | JFQA | JCF | JF |
-|---------|------|-----|-----|
-| Abstract | 100–140 words | 130–160 words + keywords box | 120–180 words |
-| Section numbering | Roman (I, II, III) | Arabic decimals (1, 2.1, 2.2) | Roman |
-| Hypothesis format | Italicized prose — no boxes | Formal **H1(a)**, **H1(b)** boxes | Integrated prose |
-| Footnote density | High (15–25/paper) | Low–medium | Medium |
-| Article info box | No | Yes (editor, JEL, keywords) | No |
-| Roadmap sentence | Last sentence of introduction | Last sentence of introduction | Last sentence of introduction |
+| Feature | JFQA | JCF | JF | Review of Finance |
+|---------|------|-----|-----|-------------------|
+| Abstract | 100–140 words | 130–160 words + keywords box | 120–180 words | 100–150 words |
+| Section numbering | Roman (I, II, III) | Arabic decimals (1, 2.1, 2.2) | Roman | Arabic decimals |
+| Hypothesis format | Italicized prose — no boxes | Formal **H1(a)**, **H1(b)** boxes | Integrated prose | Italicized prose |
+| Footnote density | High (15–25/paper) | Low–medium | Medium | Medium |
+| Article info box | No | Yes (editor, JEL, keywords) | No | Yes (JEL, keywords) |
+| Roadmap sentence | Last sentence of intro | Last sentence of intro | Last sentence of intro | Last sentence of intro |
 
 ---
 
@@ -90,7 +90,7 @@ Move 5: [Policy implication or contribution claim]
 
 ## Findings Preview — Critical Pattern
 
-**Always include specific numbers in the introduction.** This is the single most consistent pattern across all 50 papers.
+**Always include specific numbers in the introduction.** The single most consistent pattern across all 50 papers in the corpus.
 
 **Strong** (JFQA): *"An interquartile increase in our primary measure of corruption is associated with a 17.4% decline in the number of patents."* (Ellis et al. 2020)
 
@@ -205,5 +205,16 @@ Always preview the identification strategy in the introduction:
 
 ## Additional Resources
 
+### Reference Files
+
 - **`references/section-patterns.md`** — Section-by-section structural patterns with real paper quotes
 - **`references/empirical-design-patterns.md`** — How to describe 10 identification strategies in prose (DiD, IV, RDD, PSM-DiD, Oster bound, etc.)
+
+### Standalone Prompts (Copy-Paste Ready)
+
+For use without Claude Code — paste directly into any Claude chat:
+
+- **`prompts/01-analyze-manuscript.md`** — Full manuscript analysis with section scores
+- **`prompts/02-rewrite-introduction.md`** — 7-paragraph introduction rewrite
+- **`prompts/03-rewrite-abstract.md`** — Abstract rewrite (JFQA 4-move / JCF 5-move)
+- **`prompts/04-identification-language.md`** — DiD / IV / RDD / Oster / PSM-DiD language templates
