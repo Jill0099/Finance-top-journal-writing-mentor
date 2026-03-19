@@ -19,11 +19,11 @@ This skill helps you:
 
 Say any of the following to activate this skill:
 
-- `根据顶刊论文分析我的manuscript`
 - `analyze my manuscript against top journal style`
-- `用顶刊风格改写我的Introduction`
-- `按顶刊标准检查我的稿件`
-- `rewrite my abstract in JFQA style`
+- `rewrite my introduction in JFQA style`
+- `check my paper against top journal standards`
+- `rewrite my abstract in JCF style`
+- `help me write identification strategy language for DiD`
 
 ---
 
