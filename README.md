@@ -12,8 +12,9 @@ This skill helps you:
 
 1. **Analyze your manuscript** against top journal writing standards — section by section with scores and rewrite suggestions
 2. **Learn writing patterns** extracted from 50 real published papers (abstracts, introductions, hypothesis development, robustness sections)
-3. **Rewrite sections** in JFQA / JCF / JF style while preserving your scientific content
-4. **Use correct identification language** — templates for DiD, IV, RDD, PSM-DiD, Oster bound, and 6 more designs
+3. **Sell your paper effectively** — 8 rhetorical strategies from top papers with verbatim examples (how to hook editors, frame gaps, position contributions)
+4. **Rewrite sections** in JFQA / JCF / JF style while preserving your scientific content
+5. **Use correct identification language** — templates for DiD, IV, RDD, PSM-DiD, Oster bound, and 6 more designs
 
 ## Trigger Phrases
 
@@ -50,6 +51,7 @@ top-journal-writing-mentor/
 ├── SKILL.md                          # Core skill (auto-loaded when triggered)
 ├── references/
 │   ├── section-patterns.md           # Abstract/Intro/Hypothesis/Results patterns
+│   ├── selling-strategies.md         # 8 rhetorical strategies for selling papers
 │   └── empirical-design-patterns.md  # 10 identification strategy templates
 └── prompts/
     ├── 01-analyze-manuscript.md      # Full manuscript analysis prompt

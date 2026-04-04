@@ -1,11 +1,20 @@
 # Empirical Design Patterns — Prose Templates
 ## How to Describe Identification Strategies in Top Finance Journals
 
-Extracted from 50 papers across JFQA, JCF, Journal of Finance, and bib annotations.
+Extracted from 50 papers across JFQA, JCF, Journal of Finance, and bib annotations. Each design includes prose templates for the introduction preview, method section, and robustness defense — the exact language editors and referees expect to see.
+
+The designs are ordered from most common in the corpus (DiD dominates JFQA/JCF) to most specialized. For each design, note:
+- **When to use**: the empirical setting that calls for this design
+- **How to sell**: how top papers frame the identification choice as a strength (see also `references/selling-strategies.md`)
+- **Prose templates**: copy and adapt, replacing bracketed fields
 
 ---
 
 ## 1. Difference-in-Differences (DiD)
+
+**When to use**: A discrete policy/event creates a clean treated vs. control split at a known date. Dominant in JCF China papers and JFQA political economy papers.
+
+**How to sell**: Name the specific shock in ¶3 of the introduction. Use the "ideal experiment approximation" strategy — frame the policy as providing "as-if random" treatment assignment. If the setting is non-U.S., use the "ideal setting" strategy to explain why this context provides cleaner identification than alternatives.
 
 ### Introduction preview (¶3)
 
@@ -31,6 +40,10 @@ Extracted from 50 papers across JFQA, JCF, Journal of Finance, and bib annotatio
 
 ## 2. Staggered DiD
 
+**When to use**: Treatment rolls out at different times across units (e.g., state-by-state policy adoption). Requires the newer heterogeneity-robust estimators — reviewers now flag "naive" two-way FE as insufficient.
+
+**How to sell**: Citing Goodman-Bacon (2021) or Callaway & Sant'Anna (2021) signals methodological awareness. Frame the staggered rollout as providing *more* variation than a single shock.
+
 When treatment is staggered across units/time:
 
 > *"Our identification exploits the staggered nature of [policy rollout / appointments] across [firms/regions/years]. To address concerns about heterogeneous treatment effects in staggered DiD designs (Goodman-Bacon 2021; Callaway and Sant'Anna 2021), we construct a heterogeneity-robust estimator following [Sun and Abraham (2021) / Callaway and Sant'Anna (2021)]. Our results are robust to this alternative estimator (Table [X], Panel [B])."*
@@ -39,6 +52,10 @@ When treatment is staggered across units/time:
 
 ## 3. Triple Difference (DDD)
 
+**When to use**: You have a DiD setup *and* want to show the effect operates through a specific channel by interacting with a moderator. Often used to elevate a DiD paper from "documenting an effect" to "identifying a mechanism."
+
+**How to sell**: Frame as a test that *distinguishes* between competing mechanisms — not just adding a moderator for its own sake.
+
 Used to isolate mechanism channels:
 
 > *"To test whether the effect operates through the [mechanism] channel, we augment our DiD specification with an interaction between [Treated × Post] and [Moderator], estimating a triple-difference (DDD) design. The coefficient on Treated × Post × Moderator = [X] (t = [Y]) indicates that the effect is [X]% larger for firms with [high moderator], consistent with the [mechanism] hypothesis."*
@@ -46,6 +63,10 @@ Used to isolate mechanism channels:
 ---
 
 ## 4. Instrumental Variables (IV)
+
+**When to use**: No clean natural experiment exists, but you have a plausible instrument. Be warned: editors are increasingly skeptical of IV (Edmans notes that peer-group averages and lagged X are "nearly never valid").
+
+**How to sell**: The exclusion restriction defense is everything. Front-load the theoretical argument for *why* the instrument only works through the proposed channel. Report first-stage F > 10 immediately.
 
 ### Introduction preview
 
@@ -62,6 +83,10 @@ Used to isolate mechanism channels:
 ---
 
 ## 5. Regression Discontinuity Design (RDD)
+
+**When to use**: A sharp threshold (vote margin, test score, regulation cutoff) creates quasi-random assignment near the boundary. Highly credible when applicable, but limited to settings with a clear assignment rule.
+
+**How to sell**: Use the "ideal experiment approximation" — state that RDD is "very close in spirit to random assignment" (Flammer 2015). But always report the four validation tests below; omitting any one invites referee skepticism.
 
 ### Introduction preview
 

@@ -175,6 +175,11 @@ Always preview the identification strategy in the introduction:
 ### Hypothesis Development [X/5]
 [For JCF: are H1(a)/H1(b) format used? For JFQA: italicized prose?]
 
+## Selling Strategy Assessment
+**Current strategies used**: [identify which of the 8 strategies the author employs]
+**Missing opportunities**: [which strategies should be added?]
+**Recommended framing**: [1-2 sentence suggestion for how to reposition the contribution]
+
 ## Top 3 Priority Fixes
 1. [Highest impact change with example]
 2. ...
@@ -189,6 +194,23 @@ Always preview the identification strategy in the introduction:
 
 ---
 
+## How Top Papers Sell Their Contribution
+
+Beyond correct structure, a paper must be *positioned* effectively. See `references/selling-strategies.md` for 8 rhetorical strategies distilled from the corpus:
+
+1. **"First Evidence" Claim** — scoped novelty claim (Khan et al.: "First Evidence on Materiality")
+2. **"Known A + Known B, Nobody Connected Them"** — bridge two literatures (Ellis et al.: corruption + innovation)
+3. **Setting Limitation → Identification Advantage** — reframe narrow context as strength (Ellis et al.: U.S.-only avoids cross-country confounds)
+4. **Endogeneity Critique of All Prior Work** — dismiss prior literature as correlational, offer causal design (Flammer: 167 studies → RDD)
+5. **Dramatic / Vivid Opening Hook** — event date, poll statistic, company anecdote (Campello et al.: Brexit date)
+6. **"Ideal Experiment" Approximation** — describe perfect experiment, claim yours approximates it
+7. **Explicit Differentiation from Rival Paper** — name the closest paper, explain how you differ
+8. **Policy Relevance Framing** — connect to policymakers, investors, practitioners
+
+When analyzing a manuscript, assess which 2-3 strategies the author uses (or should use) and whether they are executed effectively.
+
+---
+
 ## Common Mistakes (From Corpus Analysis)
 
 1. **Generic opening** — "In recent years / with the development of" → replace with event/fact/assertion
@@ -200,6 +222,7 @@ Always preview the identification strategy in the introduction:
 7. **Conflating mechanism and robustness tests** — keep them in separate sections
 8. **Missing exclusion restriction defense** for IV papers
 9. **China papers without generalizability discussion** — always explain why findings travel beyond the specific institutional context
+10. **No selling strategy** — paper has good research but fails to frame the contribution compellingly in the first 2 pages
 
 ---
 
@@ -207,8 +230,9 @@ Always preview the identification strategy in the introduction:
 
 ### Reference Files
 
-- **`references/section-patterns.md`** — Section-by-section structural patterns with real paper quotes
-- **`references/empirical-design-patterns.md`** — How to describe 10 identification strategies in prose (DiD, IV, RDD, PSM-DiD, Oster bound, etc.)
+- **`references/section-patterns.md`** — Section-by-section structural patterns with real paper quotes (abstract → introduction → hypothesis → data → results → mechanism → robustness → conclusion)
+- **`references/selling-strategies.md`** — 8 rhetorical strategies for positioning a paper's contribution, with verbatim examples from the corpus
+- **`references/empirical-design-patterns.md`** — How to describe 10 identification strategies in prose (DiD, IV, RDD, PSM-DiD, Oster bound, etc.), including when to use each and how to sell the design choice
 
 ### Standalone Prompts (Copy-Paste Ready)
 

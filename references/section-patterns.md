@@ -1,11 +1,15 @@
 # Section-by-Section Writing Patterns
 ## Top Finance Journals: JFQA, JCF, Journal of Finance
 
-Extracted from systematic reading of 50 papers + structured bib annotations.
+Extracted from systematic reading of 50 papers + structured bib annotations. This reference covers the complete paper structure — from abstract through conclusion — with journal-specific conventions and verbatim examples.
+
+The sections are ordered as they appear in a published paper. Each section builds on the previous: the abstract compresses what the introduction expands; the introduction frames what the hypothesis section formalizes; the data section operationalizes what the hypotheses predict; and so on. Read this document end-to-end once, then use individual sections as templates when writing.
 
 ---
 
 ## Abstract
+
+The abstract is the paper's most-read section — many editors decide whether to send for review based on the abstract alone. Each journal has a distinct formula.
 
 ### JFQA Pattern (100–140 words, 4 moves)
 
@@ -45,6 +49,8 @@ Opens with a paradigm-challenge thesis sentence:
 ---
 
 ## Introduction
+
+The introduction is where the paper is won or lost. Every element — the hook, the gap, the identification preview, the findings with numbers — must work together to answer one question: **Why should the reader keep going?** See `references/selling-strategies.md` for 8 rhetorical strategies that top papers use to position their contributions.
 
 ### Opening Sentence Archetypes
 
@@ -109,6 +115,8 @@ Always the **final sentence** of the introduction:
 
 ## Section II: Literature Review and Hypothesis Development
 
+The transition from introduction to hypothesis development is critical: the introduction *frames* the question; this section *formalizes* it into testable predictions. JFQA and JCF handle this differently — JFQA integrates hypotheses into prose, while JCF expects formal numbered hypotheses.
+
 ### JFQA: Combined section, prose hypotheses
 
 Hypothesis stated as italicized prose deduction from a named theory:
@@ -143,6 +151,8 @@ Each hypothesis preceded by 1–2 paragraphs of theory. Hypothesis stated as exp
 
 ## Data Section
 
+After establishing *what* you test (hypotheses), this section explains *with what* you test it. The key challenge is making data construction decisions appear rigorous and principled rather than ad hoc — every variable definition should cite precedent or provide explicit justification.
+
 ### Standard subsection structure
 
 ```
@@ -171,6 +181,8 @@ Data sources always cited: Compustat, CRSP, ExecuComp, Thomson Reuters, Wind, CS
 
 ## Main Results Section
 
+This is where the paper delivers on the promises made in the introduction. The key principle: **every number previewed in the introduction must appear here**, and every result should be anchored to an economic magnitude, not just statistical significance.
+
 ### Regression table conventions
 
 - Baseline model in Column (1); add controls progressively
@@ -191,6 +203,8 @@ Always anchor to the sample mean or a meaningful interquartile range:
 
 ## Mechanism / Channel Tests
 
+After establishing *that* X affects Y (main results), this section explains *why* — through which channel the effect operates. This is where many papers elevate their contribution: the main effect is setup, but the mechanism is the real finding (e.g., Lan & Pan's paper isn't really about "pay restriction reduces M&A" — it's about the pay-size elasticity channel).
+
 **Separate from robustness tests.** Label: "Mechanism Analysis" or "Additional Tests."
 
 ### Cross-sectional heterogeneity pattern
@@ -204,6 +218,8 @@ Always anchor to the sample mean or a meaningful interquartile range:
 ---
 
 ## Robustness Section
+
+While mechanism tests ask "why does X affect Y?", robustness tests ask "are we sure X really affects Y?" — they address threats to validity rather than channels. Keeping these sections separate is essential; conflating them is a common mistake that confuses referees.
 
 Standard sequence (from Cao et al. 2026):
 1. Parallel trends test / dynamic event study plot
